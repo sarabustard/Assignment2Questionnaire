@@ -1,0 +1,185 @@
+body {
+    background-color: black;
+    font-family: 'Century Gothic', sans-serif;
+    color:rgb(180, 177, 177);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh; /*use this to alow full height*/
+    overflow-y: scroll;
+    cursor: url('data:image/svg+xml;base64,...'), auto;
+}
+
+#half {
+    margin-bottom: 20px; 
+}
+
+#half img {
+    max-width: 100%;
+    height: auto;
+}
+
+.questionnaire {
+    font-family: 'Century Gothic', sans-serif;
+    max-width: 100%;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #222;
+    width: 90%;
+    max-width: 800px;
+}
+
+.questionnaire h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.question {
+    padding-bottom: 20px;
+}
+
+label
+{
+    font-size: 1.3em;
+    color:rgb(221, 219, 219);
+}
+
+/* scroll bar stuff */ 
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightpink;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+#rangenumber
+{
+    display:flex;
+    justify-content: space-between;
+}
+/*how to style input types */ 
+
+input, select, textarea {
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'Century Gothic', sans-serif;
+    color: rgb(171, 168, 168);
+    font-size: 1.1rem;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+input[type="range"] 
+{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #dddddd46;
+    height: 8px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track
+{
+    
+    
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb 
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(251, 154, 169);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track 
+{
+    background: lightpink;
+    height: 8px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-thumb 
+{
+    width: 20px;
+    height: 20px;
+    background: lightpink;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] 
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #333;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked::after 
+{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: lightpink;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+input[type="radio"] 
+{
+    width: auto;
+}
+
+button {
+    background-color: lightpink;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #f1a7c6;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1); /* keeps button at orginal size */
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry Page</title>
+    <script>
+        function enterButtonClicked() {
+            window.location.href = "questions.html"; 
+        }
+    </script>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Century Gothic', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+            color: white;
+        }
+ 
+        .container {
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 3rem;
+            opacity: 1;
+            animation: fadeOut 3s ease-in-out forwards;
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .enterbutton {
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            background-color: #aa709f; 
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        
+        .enterbutton:hover {
+            background-color: #805275;
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .enterbutton:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Enter if you dare</h1>
+        <button class="enterbutton" onclick="enterButtonClicked()">Enter</button>
+    </div>
+
+</body>
+</html>
